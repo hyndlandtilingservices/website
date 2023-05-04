@@ -81,16 +81,15 @@ carousel.addEventListener("touchend", dragStop);
 
 
 
-var myHeaders = new Headers();
-myHeaders.append("Authorization", "Bearer ya29.a0AWY7CkklaHCOZKlJ8eCcQ_nQoOwCcKsVoLJBhx5DesvvkCDrxX_Y5rxIpERBvm_P1cFhlKNGAIM2GSZxMz88oz6DYZRM3VKbe0KoN72OJd_acTkS5r7DsbDcg1KNup8KkdbiEB9jUtX_6xkVBbVhN7hW79vws2DxaCgYKAWQSARMSFQG1tDrp-ea76cMjtIeQCBuWTPR8kg0167");
-
-var requestOptions = {
-  method: 'GET',
-  headers: myHeaders,
-  redirect: 'follow'
+var settings = {
+  "url": "https://mybusiness.googleapis.com/v4/accounts/101674229009143473972/locations/8071481458885251751/reviews",
+  "method": "GET",
+  "timeout": 0,
+  "headers": {
+    "Authorization": "Bearer ya29.a0AWY7CkklaHCOZKlJ8eCcQ_nQoOwCcKsVoLJBhx5DesvvkCDrxX_Y5rxIpERBvm_P1cFhlKNGAIM2GSZxMz88oz6DYZRM3VKbe0KoN72OJd_acTkS5r7DsbDcg1KNup8KkdbiEB9jUtX_6xkVBbVhN7hW79vws2DxaCgYKAWQSARMSFQG1tDrp-ea76cMjtIeQCBuWTPR8kg0167"
+  },
 };
 
-fetch("https://mybusiness.googleapis.com/v4/accounts/101674229009143473972/locations/8071481458885251751/reviews", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
