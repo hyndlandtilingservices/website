@@ -81,7 +81,7 @@ carousel.addEventListener("touchend", dragStop);
 
 
 var myHeaders = new Headers();
-myHeaders.append("Authorization", "Bearer ya29.a0AWY7CkmlcyXggoq2XOt-Mwo3-b2bDC1GZq7A2bP9j78RUd9JVv4N6u2Fy5N-BPVcOlryetyVU4Kc-eTrozwkwFpSHnNl-NLIynNr25tZtgtanMPDvXWOWUepv2EcoQGmdAOcmcUILycS5hmgPyU8QVjxGaZ07501aCgYKAeMSARMSFQG1tDrpQkPWNT0CpUtyn3IUmKzw6g0167");
+myHeaders.append("Authorization", "Bearer ya29.a0AWY7CkmxsK3qTeNtIsKjs6XcUF2iXv2L_6R12H8XjRZN8_1q0EMzaq87JGxlSzDRupAcSc8QmuvbEugs3fiml0N8pQeWOx_yILPkOeNrYoXy-usa5S_-ktHLgTMOcdlBVvNMJVqLv1e2nTtbRXXd6jwg_ZjTaCgYKAbcSARMSFQG1tDrpBtqpLFK1GaVUC9ZarLd2gA0163");
 
 var requestOptions = {
   method: 'GET',
